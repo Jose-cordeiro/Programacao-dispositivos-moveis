@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aprenda Política</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tela de Login -->
+
+    <div id="login">
+
+        <h1>Aprenda Sobre Política</h1>
+
+        <p>Entre para começar seus estudos para votar.</p>
+
+        <input type="email" id="email" placeholder="Digite seu Gmail">
+
+        <input type="password" id="senha" placeholder="Digite sua senha">
+
+        <button onclick="entrar()">Entrar</button>
+
+        <p id="erro"></p>
+
+    </div>
+
+
+    <!-- Tela de Estudos -->
+
+    <div id="estudos">
+
+        <h1>O que você quer aprender?</h1>
+
+        <button onclick="mostrarConteudo('vereador')">
+            O que é um vereador?
+        </button>
+
+        <button onclick="mostrarConteudo('estadual')">
+            O que é um deputado estadual?
+        </button>
+
+        <button onclick="mostrarConteudo('federal')">
+            O que é um deputado federal?
+        </button>
+
+        <div id="conteudo"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
